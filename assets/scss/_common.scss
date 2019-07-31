@@ -1,0 +1,81 @@
+html {
+    font-size: $font-size;
+  }
+  
+  body {
+    font-size: 1rem;
+    font-family: $font-main;
+  }
+  
+  a {
+    color: $color-primary;
+  
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $color-accent;
+    }
+  }
+  
+  h1 {
+    font-family: $font-header;
+    margin: (-$gap / 2) 0 ($gap * 3);
+
+    @include xs-min {
+      font-size: 3rem;
+    }
+    @include xs {
+      font-size: 2rem;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+      width: 100%;
+      margin: 0.85em 0 0 $gap;
+    }
+  }
+  
+  h2 {
+    font-family: $font-header;
+    margin: ($gap *4) 0 ($gap * 3) ($gap * 3);
+
+    @include xs-min {
+      font-size: 2.5rem;
+    }
+    @include xs {
+      font-size: 1.75rem;
+    }
+
+    &::before { 
+      position: absolute;
+      content: "";
+      width: 30px;
+      left: 0;
+      border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+      margin: 0.25em 0 0 0;
+    }
+    
+    &::after {
+      position: absolute;
+      content: "";
+      border-bottom: 3px solid rgba(lighten($color-accent, 15%), 0.7);
+      width: 100%;
+      margin: 0.85em 0 0 $gap;
+    }
+  }
+  
+  h3 {
+    @include xs-min {
+      font-size: 1.5rem;
+    }
+    @include xs {
+      font-size: 1.25rem;
+    }
+  }
+  
+  section {
+    position: relative;
+    overflow: hidden;
+  }
