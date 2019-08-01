@@ -134,7 +134,7 @@ section {
 
 .header-logo__title {
   display: block;
-  color: #165690;
+  color: #df8a13;
   font-family: "PT Serif", serif;
 }
 
@@ -146,6 +146,14 @@ section {
 }
 
 .main {
+  margin-bottom: 60px;
+}
+
+.main .site-search {
+  margin: -15px 0 45px;
+}
+
+.main .user-login {
   margin-bottom: 60px;
 }
 

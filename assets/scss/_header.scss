@@ -11,7 +11,7 @@
     background-size: cover;
     &__title {
         display: block;
-        color: $color-primary;
+        color: $color-accent;
         font-family: $font-header;
         @extend %text-shadow;
         @include xs-min {
